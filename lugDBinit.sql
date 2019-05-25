@@ -32,7 +32,12 @@ CREATE TABLE eventAttendance
   eventID int,
   attendeeID varchar(20)
 );
-
+INSERT INTO memberType(memTypeRef,memTypeName)
+values(1,"Passive");
+INSERT INTO memberType(memTypeRef,memTypeName)
+values(2,"Active");
+INSERT INTO memberType(memTypeRef,memTypeName)
+values(3,"Alumni");
 #ALTER TABLE `eventAttendance` ADD FOREIGN KEY (`attendedby`) REFERENCES `Member` (`UIN`);
 
 #ALTER TABLE `eventAttendance` ADD FOREIGN KEY (`eventid`) REFERENCES `Events` (`eventid`);
