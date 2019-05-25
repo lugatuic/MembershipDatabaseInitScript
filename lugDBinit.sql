@@ -11,12 +11,16 @@ CREATE TABLE Member(
   preferredName varchar(100),
   netid varchar(9),
   email tinytext,
-  lugUserName varchar(20),
   UIN varchar(20),
   joinDate date,
   memStatus int,
   beenActive bit,
   wasOfficer bit
+);
+CREATE TABLE LUGDATA(
+  UIN varchar(20),
+   lugUserName varchar(20),
+   password varchar(20)
 );
 
 CREATE TABLE Events
