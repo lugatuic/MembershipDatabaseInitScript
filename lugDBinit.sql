@@ -1,5 +1,7 @@
 CREATE DATABASE LUGDB;
 
+USE LUGDB;
+
 CREATE TABLE memberType(
   memTypeRef int,
   memTypeName varchar(30)
