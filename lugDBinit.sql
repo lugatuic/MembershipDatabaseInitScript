@@ -14,6 +14,7 @@ CREATE TABLE Member(
   netid varchar(9),
   email tinytext,
   UIN varchar(20),
+  major varchar(20),
   joinDate date,
   memStatus int,
   beenActive bit,
